@@ -118,7 +118,7 @@ table.q tr.sub td.lbl small{font-weight:400}
 .terms p{margin:0}
 .terms b{color:var(--ink);font-weight:600}
 
-.next .wrap{padding-top:56px;padding-bottom:64px;display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:end}
+.next .wrap{padding-top:56px;padding-bottom:64px;display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:start}
 .next p{font-size:18px}
 footer{border-top:1px solid var(--ink);font-size:13.5px;color:var(--muted)}
 footer .wrap{padding-top:18px;padding-bottom:28px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
@@ -147,6 +147,118 @@ footer .wrap{padding-top:18px;padding-bottom:28px;display:flex;justify-content:s
   table.prod td:first-child{white-space:normal}
 }
 
+
+/* v4: cover with product, story */
+.cover2 .wrap{padding-top:56px;padding-bottom:44px}
+.cover2 .ctext{max-width:860px}
+.cover2 h1{margin-bottom:22px}
+.cover2 .lede{max-width:44em}
+.cover2 .pricebar-note{margin-top:14px;font-size:15.5px}
+.hero{position:relative;margin-top:40px;padding-right:150px}
+.frame{margin:0;border:1px solid var(--line-2);border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 18px 50px rgba(22,24,29,.14)}
+.frame img{width:100%}
+.frame.flat{box-shadow:none;border-color:var(--line)}
+.phone{position:absolute;right:0;bottom:-36px;width:250px;margin:0;border:7px solid var(--ink);border-radius:34px;overflow:hidden;background:#fff;box-shadow:0 20px 50px rgba(22,24,29,.28)}
+.today{margin:22px 0 0;max-width:420px}
+.today img{border:1px solid var(--line-2);border-radius:6px}
+.today figcaption{font-size:14px;color:var(--muted);margin-top:8px}
+.exnote{margin:56px 0 0;font-size:14.5px;color:var(--muted)}
+.story .sub{font-size:18px;max-width:40em;margin-top:14px}
+.step{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:center;padding:52px 0;border-top:1px solid var(--line)}
+.step:first-of-type{margin-top:34px}
+.step.rev{grid-template-columns:1.2fr .8fr}
+.step.rev .stext{order:2}
+.step.wide{grid-template-columns:.7fr 1.3fr}
+.step.rev.wide{grid-template-columns:1.3fr .7fr}
+.step .n{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;border:1.5px solid var(--ink);font:800 16px/1 var(--fh);margin-bottom:14px}
+.step h3{font-size:26px;margin-bottom:14px}
+.step p{font-size:17px}
+.step figcaption{padding:10px 14px;margin:0;border-top:1px solid var(--line);background:var(--sheet)}
+.mail{margin:0 auto;max-width:360px;border:1px solid var(--line-2);border-radius:10px;overflow:hidden;box-shadow:0 18px 50px rgba(22,24,29,.12)}
+table.cmp{width:100%;border-collapse:collapse;margin-top:28px;font-size:16.5px}
+table.cmp th,table.cmp td{text-align:left;padding:14px 16px 14px 0;border-bottom:1px solid var(--line);vertical-align:top}
+table.cmp thead th{font:600 13.5px/1 var(--fb);color:var(--muted);border-bottom:2px solid var(--ink)}
+table.cmp tbody th{font-weight:600;width:22%}
+table.cmp td:nth-child(2){color:var(--muted);width:36%}
+.wl{margin-top:28px}
+.wrow{display:grid;grid-template-columns:90px 1fr 170px;gap:24px;padding:26px 0;border-top:1px solid var(--line)}
+.wrow h3{margin-bottom:10px}
+.wrow p{font-size:16.5px;margin:0}
+.wrow table.prod{margin-top:14px;max-width:420px}
+.wrow table.prod td:last-child{text-align:right;font-weight:600}
+@media screen and (max-width:860px){
+  .hero{padding-right:0;margin-top:28px}
+  .phone{position:relative;right:auto;bottom:auto;width:62%;margin:-90px 0 0 auto}
+  .exnote{margin-top:24px}
+  .step,.step.rev,.step.wide,.step.rev.wide{grid-template-columns:1fr;gap:22px;padding:36px 0}
+  .step.rev .stext{order:0}
+  .step h3{font-size:22px}
+  table.cmp{font-size:15px}
+  table.cmp thead{display:none}
+  table.cmp tr{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--line);padding:10px 0}
+  table.cmp tbody th{grid-column:1/-1;width:auto;border:0;padding:0 0 6px}
+  table.cmp td{border:0;padding:0 10px 0 0;width:auto!important}
+  .wrow{grid-template-columns:1fr;gap:10px}
+  .wrow .lineprice{text-align:left}
+}
+
+
+/* v5 */
+.cover3 .wrap{padding-top:56px;padding-bottom:48px}
+.cover3 h1{max-width:15ch}
+.c3grid{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:end;margin:24px 0 34px}
+.c3grid .lede{margin:0;font-size:19px}
+.c3grid .pricebar-note{margin:0;font-size:16px;line-height:1.6;text-align:right}
+.shot{margin:0;position:relative;border:1px solid var(--line-2);border-radius:12px;overflow:hidden;background:#fff}
+.shot.big{box-shadow:0 22px 60px rgba(22,24,29,.14)}
+.shot.flat{border:0;background:transparent;border-radius:0}
+.shot img{width:100%}
+.shot figcaption{padding:10px 14px;border-top:1px solid var(--line);background:var(--sheet);font-size:14px;color:var(--muted)}
+.lab{position:absolute;top:12px;right:12px;background:var(--ink);color:#fff;font:600 13px/1 var(--fb);padding:7px 10px;border-radius:999px}
+.lab.new{background:var(--act)}
+.zoom{display:block;cursor:zoom-in}
+.exnote{margin:16px 0 0;font-size:14.5px;color:var(--muted)}
+.band{border-top:1px solid var(--ink);background:var(--ink);color:#F4F2ED}
+.band .wrap{padding-top:40px;padding-bottom:40px}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ba figure{margin:0;position:relative}
+.ba figcaption{position:absolute;left:12px;bottom:12px;background:rgba(11,13,16,.75);color:#fff;font:600 14px/1 var(--fb);padding:8px 12px;border-radius:999px}
+.bacap{margin:18px 0 0;font-size:17px;color:#D9D6CF;max-width:46em}
+.st{padding:48px 0;border-top:1px solid var(--line)}
+.st:first-of-type{margin-top:30px}
+.sth{display:grid;grid-template-columns:56px 1fr;gap:8px 18px;max-width:900px;margin-bottom:26px}
+.sth h3{font-size:26px;margin:2px 0 12px}
+.sth p{font-size:17px}
+.st .n{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:50%;border:1.5px solid var(--ink);font:800 17px/1 var(--fh)}
+.pair{display:grid;gap:22px}
+.coverpair{display:grid;grid-template-columns:1fr 230px;gap:24px;align-items:center}
+.coverpair .phone{position:static;width:auto;border:7px solid var(--ink);border-radius:34px;overflow:hidden;margin:0;box-shadow:0 22px 60px rgba(22,24,29,.2)}
+.withphone{display:grid;grid-template-columns:1fr 250px;gap:22px;align-items:start}
+.withphone .phone{position:static;width:auto;border:7px solid var(--ink);border-radius:34px;overflow:hidden;margin:0;box-shadow:none}
+.mailstep{display:grid;grid-template-columns:380px 1fr;gap:48px;align-items:center}
+.mailstep .mail{max-width:none;margin:0}
+.sth.solo{margin:0}
+.money{margin-top:30px;gap:40px}
+.money p{font-size:16px;margin:0}
+.firstyear{margin:22px 0 0;font-size:17px}
+.firstyear b{font:800 26px/1 var(--fh);font-variation-settings:"wdth" 105}
+.wrow{grid-template-columns:70px 1fr}
+@media screen and (max-width:860px){
+  .c3grid{grid-template-columns:1fr;gap:16px}
+  .c3grid .pricebar-note{text-align:left}
+  .ba{grid-template-columns:1fr 1fr;gap:8px}
+  .sth{grid-template-columns:1fr;gap:10px}
+  .sth h3{font-size:22px}
+  .withphone{grid-template-columns:1fr}
+  .coverpair{grid-template-columns:1fr}
+  .coverpair .phone{width:70%;margin:0 auto}
+  .withphone .phone{width:72%;margin:0 auto}
+  .mailstep{grid-template-columns:1fr;gap:24px}
+  .mailstep .mail{max-width:340px;margin:0 auto}
+  .money{grid-template-columns:1fr;gap:16px}
+  .wrow{grid-template-columns:1fr}
+}
+
 @page{size:Letter;margin:14mm 13mm}
 @media print{
   body{background:#fff;font-size:11.5pt}
@@ -167,7 +279,36 @@ footer .wrap{padding-top:18px;padding-bottom:28px;display:flex;justify-content:s
   .total div{padding:10px 0}
   .pricebar b{font-size:28pt}
   section.block>.wrap,.line>.wrap{padding-top:26px;padding-bottom:26px}
-  #line2,#line3,#when{break-before:page}
+  #work,#when{break-before:page}
+  .band{break-before:page}
+  .st{padding:16px 0;break-inside:avoid}
+  .sth h3{font-size:15pt}.sth p{font-size:10.5pt}
+  .sth{margin-bottom:12px}
+  .pair{gap:10px}
+  .withphone{grid-template-columns:1fr 150px}
+  .coverpair{grid-template-columns:1fr 150px}
+  .coverpair .phone{border-width:5px;border-radius:22px;box-shadow:none}
+  .withphone .phone{border-width:5px;border-radius:22px}
+  .mailstep{grid-template-columns:200px 1fr;gap:24px}
+  .shot.big{box-shadow:none}
+  .band .wrap{padding-top:16px;padding-bottom:16px}
+  .c3grid{margin:12px 0 16px}
+  .cover3 h1{font-size:32pt}
+  .cover3 .wrap{padding-top:14px;padding-bottom:10px}
+  .exnote{margin-top:8px;font-size:9pt}
+  .money p{font-size:10pt}
+  .step{break-inside:avoid;padding:18px 0;gap:22px}
+  .step h3{font-size:16pt}.step p{font-size:10.5pt}
+  .hero{padding-right:120px;margin-top:20px}.phone{width:170px;bottom:-20px;border-width:5px;border-radius:24px}
+  .exnote{margin-top:30px;font-size:9.5pt}
+  .frame{box-shadow:none}
+  .mail{max-width:190px;box-shadow:none}
+  .step.wide .frame{max-width:100%}
+  .story .sub{font-size:11pt}
+  table.cmp{font-size:10pt;margin-top:12px}table.cmp th,table.cmp td{padding:4px 10px 4px 0}
+  #changes .aside{font-size:9.5pt;margin-top:10px;break-inside:avoid}
+  #changes>.wrap{padding-top:16px}
+  .wrow{grid-template-columns:60px 1fr 120px;padding:14px 0;break-inside:avoid}.wrow p{font-size:10.5pt}
   .quote{break-before:page;background:#fff}
   .qhead{margin-bottom:12px}
   table.q td{padding:6px 10px 6px 0}
@@ -195,139 +336,102 @@ footer .wrap{padding-top:18px;padding-bottom:28px;display:flex;justify-content:s
   </div>
 </header>
 
-<section class="cover">
+<section class="cover3">
   <div class="wrap">
-    <div>
-      <h1>Your B304x Baker has no price on your website. <em>Here is what fixing that costs.</em></h1>
-      <p class="lede">You have made mirror frames in Addison for twenty years. Online, a buyer can't see what any of them cost, and a quote request goes to whichever inbox it lands in. If prices are hidden on purpose, to protect your dealers, that stays your call: the new store can show the public a full price, a "from" price or no price at all, while trade buyers log in to see theirs. Below: the store, the quotes and the email security, as one job.</p>
-      <div class="pricebar">
-        <div><b class="num">$4,500</b><span>once, to build</span></div>
-        <div><b class="num">$714</b><span>a month, no contract</span></div>
-      </div>
-      <p class="pricebar-note">Every line is itemized in <a href="#quote">the quote at the end</a>.<span class="noprint"> · <a href="Mirror-Upgrade-Proposal-Station.pdf" download>Download the PDF</a></span></p>
+    <h1>Here is Mirror Upgrade, <em>on Station.</em></h1>
+    <div class="c3grid">
+      <p class="lede">Your store's quotes, chat and email in one inbox. A price on every frame, worked out from the buyer's own measurements. Follow-ups that go out by themselves. Dealers emailed in one go. Fake invoices in your name turned away.</p>
+      <p class="pricebar-note">$4,500 to build · $714 a month<br><a href="#quote">The full quote is at the end</a><span class="noprint"> · <a href="Mirror-Upgrade-Proposal-Station.pdf" download>PDF</a></span></p>
     </div>
-    <div class="evidence">
-      <figure class="corner">
-        <img src="img/b304-corner.jpg" alt="Mirror Upgrade's B304x Baker frame corner sample in mahogany/cherry, photographed on white" width="1200" height="900">
-      </figure>
-      <figure class="shot">
-        <img src="img/b304-crop.jpg" alt="The B304x Baker product page on mirrorupgrade.com: the product name, two empty boxes with no labels, and an Add to Quote button. No price is shown." width="770" height="330">
-        <span class="mark m1" aria-hidden="true"></span>
-      </figure>
-      <figcaption><b>mirrorupgrade.com, 3 November 2026.</b> The B304x Baker page shows a shopper two boxes with no labels and an Add to Quote button. The same page tells Google the price is $0.00, and so do the other 89 products.</figcaption>
+    <div class="coverpair"><figure class="shot big"><a class="zoom" href="img/x-waiting.jpg" target="_blank" rel="noopener"><img src="img/x-waiting.jpg" alt="Station home screen for Mirror Upgrade: three conversations waiting on you, from a hotel renovation contractor, an interior designer and a homeowner" width="1490" height="562"></a></figure><figure class="phone"><img src="img/x-phone-chat.jpg" alt="The inbox on a phone: a hotel renovation contractor asking about 14 bathrooms" width="780" height="1688"></figure></div>
+    <p class="exnote">Real Station screens, set up for Mirror Upgrade with example customers. Your own customers and quotes replace them on day one. Tap any screen to see it full size.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="ba">
+      <figure><img src="img/x-before.jpg" alt="A bathroom with a plain frameless mirror, from Mirror Upgrade's gallery" width="1400" height="1050" loading="lazy"><figcaption>Before</figcaption></figure>
+      <figure><img src="img/x-after.jpg" alt="The same bathroom with a dark Mirror Upgrade frame on the mirror, from Mirror Upgrade's gallery" width="1400" height="1050" loading="lazy"><figcaption>After</figcaption></figure>
+    </div>
+    <p class="bacap">From your gallery. Twenty years of making this happen deserves a store and a system that keep up with it.</p>
+  </div>
+</section>
+
+<section class="block story" id="story">
+  <div class="wrap">
+    <h2>One quote, <em>start to finish</em></h2>
+    <p class="sub">A homeowner in Frisco wants to frame the builder-grade mirror in her bathroom. Here is what happens, screen by screen.</p>
+
+    <div class="st">
+      <div class="sth"><span class="n">1</span><div><h3>She prices the frame herself, at nine at night</h3><p>Today the B304x page shows her two empty boxes and an Add to Quote button, and Google reads the frame as $0.00. On the new page she types her mirror's size and sees a price and what comes in the kit. A contractor or dealer logs in and sees their trade price instead. An unusual job? She sends a photo from the same page.</p></div></div>
+      <div class="pair">
+        <figure class="shot"><span class="lab">Today</span><a class="zoom" href="img/x-today.jpg" target="_blank" rel="noopener"><img src="img/x-today.jpg" alt="The B304x Baker page on mirrorupgrade.com today: two unlabelled boxes and Add to Quote, no price" width="2000" height="643" loading="lazy"></a></figure>
+        <figure class="shot"><span class="lab new">New</span><a class="zoom" href="img/x-store.jpg" target="_blank" rel="noopener"><img src="img/x-store.jpg" alt="Concept of the new B304x Baker page: mirror width and height, a price, Add to cart, Send a photo for a quote, and a trade login" width="2000" height="1030" loading="lazy"></a><figcaption>A concept. The price shown is an example; yours come from your price sheet.</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="st">
+      <div class="sth"><span class="n">2</span><div><h3>It lands in one inbox, with everything you need to answer</h3><p>Style, size, ZIP and her photo arrive together. Quotes from the store, website chat and email all come into this one list, on your computer and on your phone. Beside each one: where they are in the sale, whether they're retail, trade or wholesale, and your team's notes.</p></div></div>
+      <figure class="shot"><a class="zoom" href="img/x-inbox.jpg" target="_blank" rel="noopener"><img src="img/x-inbox.jpg" alt="Station inbox for Mirror Upgrade: a quote request from the store for a B304x Baker, 60 by 42 inches, the reply, and the customer's stage, tag and notes" width="2000" height="868" loading="lazy"></a></figure>
+    </div>
+
+    <div class="st">
+      <div class="sth"><span class="n">3</span><div><h3>She goes quiet. The follow-up doesn't, and nobody gets lost.</h3><p>By the next day there's no answer. A reminder goes out in your words, then a few more over two weeks, and stops the moment she replies or says no. Email by default; texts only to customers who have agreed to them. Every customer is tagged and staged, so you can see at a glance who's talking, who's booked and who's won.</p></div></div>
+      <figure class="shot"><a class="zoom" href="img/x-followups.jpg" target="_blank" rel="noopener"><img src="img/x-followups.jpg" alt="Station follow-ups for Mirror Upgrade: two quotes being followed up, with the next step and date" width="2000" height="713" loading="lazy"></a></figure>
+      <figure class="shot" style="margin-top:22px"><a class="zoom" href="img/x-contacts.jpg" target="_blank" rel="noopener"><img src="img/x-contacts.jpg" alt="Station contacts for Mirror Upgrade: homeowners, contractors, designers and dealers with stages and retail, commercial, trade and wholesale tags" width="2000" height="1124" loading="lazy"></a></figure>
+    </div>
+
+    <div class="st mailstep">
+      <figure class="mail"><a class="zoom" href="img/x-email.jpg" target="_blank" rel="noopener"><img src="img/x-email.jpg" alt="Example Mirror Upgrade trade email about the B304x Baker, in Mirror Upgrade's gold, with a See the B304x button" width="900" height="1716" loading="lazy"></a></figure>
+      <div class="sth solo"><span class="n">4</span><div><h3>One email reaches every dealer</h3><p>A new style, a new color, a price change: write it once in your own colors, pick "wholesale" and "trade", and send. Opens and clicks come back into the same app, so you can see which dealers looked.</p><p>And after every delivery, a short email asks for a Google review. You have one today; Barco Mirror &amp; Glass, a mile up Addison Road, has 25.</p></div></div>
+    </div>
+
+    <div class="st">
+      <div class="sth"><span class="n">5</span><div><h3>A fake invoice in your name gets turned away</h3><p>Two records on your domain mean anyone can send email that claims to be from order@mirrorupgrade.com. We fix them, and from then on Gmail and Outlook refuse what you didn't send.</p></div></div>
+      <figure class="shot flat"><picture><source media="(max-width:700px)" srcset="img/x-security-m.jpg"><img src="img/x-security.jpg" alt="An example fake invoice from order@mirrorupgrade.com. Today nothing on the domain tells Gmail or Outlook to stop it; after the fix they turn it away" width="2000" height="690" loading="lazy"></picture></figure>
     </div>
   </div>
 </section>
 
-<section class="block">
-  <div class="wrap intro">
-    <h2>Since we <em>spoke</em></h2>
-    <div>
-      <p>After we met in October we looked at mirrorupgrade.com again, and this time at the domain and the email behind it too. Everything below was checked from the outside, the way a customer or a stranger on the internet sees you: first in September, and the main points again on 3 November.</p>
-      <p>Your store runs on Shopify, your mail on Microsoft 365 with a Proofpoint filter in front of it, your domain is registered at GoDaddy and its DNS records sit at HostGator. Five companies each hold a piece, and none of them checks the others' settings. In September, Google Safe Browsing, Sucuri and our own sweep of 24 pages found no malware on the site.</p>
-      <p>The three lines below start with the cheapest and fastest to fix.</p>
+<section class="block" id="changes">
+  <div class="wrap">
+    <h2>What changes <em>for you</em></h2>
+    <table class="cmp">
+      <thead><tr><th></th><th>Today</th><th>With Station</th></tr></thead>
+      <tbody>
+        <tr><th>Quotes from the store, chat and email</th><td>Spread across info@, order@ and a quote app</td><td>One inbox, on the web and on your phone</td></tr>
+        <tr><th>A quote that goes quiet</th><td>Waits until someone remembers</td><td>Followed up in your words until they answer</td></tr>
+        <tr><th>Prices online</th><td>None. Google reads every product as $0.00</td><td>A price from the buyer's own size; trade prices behind a login</td></tr>
+        <tr><th>Google Shopping</th><td>None of your 90 products can be listed</td><td>A product feed with real prices</td></tr>
+        <tr><th>The quote page</th><td>Shows the code <span class="rec" style="display:inline;padding:1px 6px;margin:0">{rfq_content}</span></td><td>A form that takes the size, style and a photo</td></tr>
+        <tr><th>Google reviews</th><td>One, from four years ago</td><td>A request after every delivery</td></tr>
+        <tr><th>Your dealers</th><td>One email at a time</td><td>One email to all of them</td></tr>
+        <tr><th>Fake email in your name</th><td>Nothing tells Gmail or Outlook to stop it</td><td>Turned away</td></tr>
+      </tbody>
+    </table>
+    <div class="two money">
+      <p><b>Is it worth $714 a month?</b> That depends on how many quotes come in and what an order is worth to you. Bring rough numbers to the meeting and we'll work out together how many saved quotes pay for it.</p>
+      <p><b>Bills that may go away.</b> The new quote form replaces the Request for Quote app on your store, so if it's on a paid plan that charge stops. Your email records still point at HostGator's old web hosting; if you're still paying for it, we move what's left and you can cancel.</p>
     </div>
   </div>
 </section>
 
-<!-- LINE 1 -->
-<section class="line" id="line1">
+<section class="block" id="work">
   <div class="wrap">
-    <div class="linehead">
-      <div class="code"><b>01</b>MU-1</div>
-      <h2>Keep mirrorupgrade.com and its email <em>yours</em></h2>
-      <div class="lineprice"><b class="num">$500</b>once, then $97 a month</div>
-    </div>
-    <div class="cols">
-      <div class="lbl">What we found</div>
-      <div>
-        <ul class="plain">
-          <li><span class="flag">Right now, anyone can send email that claims to be from @mirrorupgrade.com, and nothing tells Gmail or Outlook to refuse it.</span> For a business that takes orders and sends invoices by email, that is the gap fake-invoice scams use. Two records cause it.</li>
-          <li>The domain publishes <span class="flag">two</span> SPF records, the list that tells other mail servers who may send as you:
-            <div class="rec">v=spf1 a mx include:websitewelcome.com include:outlook.com ~all</div>
-            <div class="rec">v=spf1 a:dispatch-us.ppe-hosted.com include:spf.protection.outlook.com -all</div>
-            The rules allow one. A receiving server that finds two treats the check as an error, so neither record counts. The first one still names websitewelcome.com, HostGator's old web hosting.</li>
-          <li>There is <span class="flag">no DMARC record</span>. DMARC tells Gmail and Outlook what to do with mail that claims to be from @mirrorupgrade.com but isn't. Without it, a fake invoice from "order@mirrorupgrade.com" has nothing telling the receiver to reject it.</li>
-          <li>The domain, registered since 2010 and now at GoDaddy, comes up for renewal on 19 November. The registry shows a change last November, which looks like last year's renewal, so auto-renew may well be on. Worth two minutes in your GoDaddy account to be sure. If it lapsed, the store and email would stop within days.</li>
-          <li>What is in good shape: the site's certificate is valid to December and renews itself, it sends the right security headers, and the signing keys Microsoft 365 needs (DKIM) are published.</li>
-        </ul>
+    <h2>What we <em>build</em></h2>
+    <div class="wl">
+      <div class="wrow">
+        <div class="code"><b>01</b></div>
+        <div><h3>Email and domain security</h3><p>One correct SPF record in place of the two, DMARC (two weeks of reports first so no real mail is blocked, then a policy that rejects fakes), the domain locked and its 19 November renewal checked with you on our first call. Then a full outside security check of your email, website, encryption and DNS, the fixes, and a fresh check every month.</p></div>
       </div>
-      <div>
-        <h3>What we do</h3>
-        <ul class="plain">
-          <li>Check the domain renewal and lock it with you on our first call, in your GoDaddy account and your company's name. No charge for that.</li>
-          <li>Replace the two SPF records with one correct record, and publish DMARC: two weeks of reports first, so no real mail gets blocked, then a policy that rejects fakes.</li>
-          <li>Run a full outside security check of your email, website, encryption and DNS (69 checks). We fix what it finds and check again.</li>
-          <li>Every month after: a fresh scan, and an email from us if anything changed.</li>
-        </ul>
+      <div class="wrow">
+        <div class="code"><b>02</b></div>
+        <div><h3>The store, rebuilt on your Shopify</h3><p>New design on the account you already have, so orders, customers and checkout carry over. The size calculator on every frame from your price sheet, with your rules for minimums and cut fees. You decide what the public sees: a full price, a "from" price or none. Trade prices behind a login you approve (on your plan that takes a wholesale app; you see its fee before you agree). A quote form that works, every collection linked, fast on a phone, every page written up for Google with a real price, and a product feed to Google Merchant Center. You approve every page on a preview link first.</p></div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- LINE 2 -->
-<section class="line" id="line2">
-  <div class="wrap">
-    <div class="linehead">
-      <div class="code"><b>02</b>MU-2</div>
-      <h2>Put a price on the B304x, <em>and the other 89</em></h2>
-      <div class="lineprice"><b class="num">$4,000</b>once</div>
-    </div>
-    <div class="cols">
-      <div class="lbl">What we found</div>
-      <div>
-        <ul class="plain">
-          <li>All 90 products carry a price of $0.00. Shoppers see no price; Google sees $0.00, which keeps every product out of Google Shopping and breaks the price in your product markup.</li>
-          <li>The Request for Quote page shows the raw code <span class="rec" style="display:inline;padding:1px 6px;margin:0">{rfq_content}</span> to visitors, and to Google's crawler.</li>
-          <li>On a phone the homepage took 10.4 seconds to show its main image (Lighthouse, September). The theme dates from 2020.</li>
-          <li>36 collections exist; the homepage links to 13. Your style and color collections can only be found through the sitemap. No page has a description written for Google (products reuse their spec text), and "Addison" doesn't appear on the homepage or About page.</li>
-          <li>Tapping the email address in the footer opens the phone dialer, because it is coded as a phone link. In September the site said you open at 10 and Google said 9:30.</li>
-        </ul>
-      </div>
-      <div>
-        <h3>What we do</h3>
-        <ul class="plain">
-          <li>Rebuild the store on the Shopify account you already have, so your orders, customers and checkout carry straight over.</li>
-          <li>A size calculator on every frame: width and height in, price out, worked from your own price sheet. Minimum orders, cut fees and any other rule you quote by go in too.</li>
-          <li>You decide what the public sees: a full price, a "from" price, or none. Trade and wholesale prices sit behind a login you approve each buyer for. On your Shopify plan that needs a wholesale app; we pick it with you and show you its monthly fee before you agree.</li>
-          <li>A quote form that works for the jobs a calculator can't price: size, style, a photo of the mirror. It lands in line 03's inbox, not a mailbox.</li>
-          <li>Every product and collection written up for Google, with a real price, your address and your FAQ marked up, a product feed sent to Google Merchant Center, and your Google listing set to what you make.</li>
-          <li>You see the new store on a preview link and approve every page before it replaces the old one.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- LINE 3 -->
-<section class="line" id="line3">
-  <div class="wrap">
-    <div class="linehead">
-      <div class="code"><b>03</b>MU-3</div>
-      <h2>Give every quote <em>one place to land</em></h2>
-      <div class="lineprice"><b class="num">$617</b>a month</div>
-    </div>
-    <div class="cols">
-      <div class="lbl">What we found</div>
-      <div>
-        <ul class="plain">
-          <li>Your site lists five ways in: a toll-free line, a local line, a fax, info@ and order@. Nothing ties them together, so a quote lives wherever it happened to arrive, and nobody is reminded when it goes quiet.</li>
-          <li>On Google you have one review, a five-star from four years ago, and you're filed as a contractor. For comparison, Barco Mirror &amp; Glass, a mile away on Addison Road, has 25.</li>
-        </ul>
-        <h3 style="margin-top:26px">What we do</h3>
-        <p>Station's customer system. Quote requests from the new store, website chat and email arrive in one inbox, on the web and on your phone. Each customer gets one record with every message, a stage (new, talking, booked, won, lost), a retail, commercial or wholesale tag, and notes your team can read.</p>
-        <p>We import your customer list and open quotes, write the follow-up messages in your words, and set up a login for everyone who answers quotes. No setup fee.</p>
-        <p class="aside" style="margin-top:8px">Is it worth $617 a month? That depends on how many quotes come in and what an order is worth. Bring rough numbers to the meeting and we'll work it out with you, line by line.</p>
-      </div>
-      <div>
-        <h3>What's in it</h3>
-        <table class="prod">
-          <tr><td>Quote follow-up<small>Pursuit · $247</small></td><td>Every quote that goes quiet gets a reminder in your words, until they answer or say no. Email by default; texts only to customers who have agreed to texts. You choose who it skips.</td></tr>
-          <tr><td>Store chat<small>Greet · $79</small></td><td>A chat on the new store that asks for the size, the style and a phone number, and drops it in the inbox.</td></tr>
-          <tr><td>Google reviews<small>Repute · $197</small></td><td>Asks each customer for a review after delivery, and drafts your replies.</td></tr>
-          <tr><td>Trade email<small>Dispatch · $94</small></td><td>Email to your dealers and contractors: new styles, price changes.</td></tr>
-        </table>
-        
+      <div class="wrow">
+        <div class="code"><b>03</b></div>
+        <div><h3>The customer system</h3><p>Everything on the screens above: one inbox, quote follow-up, chat on the store, review requests and trade email. We import your customer list and open quotes, write the follow-ups in your words, and give everyone who answers quotes their own login. Your phone numbers stay exactly as they are.</p></div>
       </div>
     </div>
   </div>
@@ -377,22 +481,18 @@ footer .wrap{padding-top:18px;padding-bottom:28px;display:flex;justify-content:s
         <tr class="sub"><td class="c"></td><td class="lbl">Total to build<small>Half to start, half when the new store goes live</small></td><td class="r"><b>$4,500</b></td></tr>
 
         <tr class="group"><td colspan="3">Every month</td></tr>
-        <tr><td class="c">MU-3B</td><td>Station customer system<small>One inbox, quote follow-up, store chat, review requests, trade email</small></td><td class="r">$617</td></tr>
+        <tr><td class="c">MU-3B</td><td>Customer system<small>One inbox, quote follow-up ($247), store chat ($79), review requests ($197), trade email ($94)</small></td><td class="r">$617</td></tr>
         <tr><td class="c">MU-1B</td><td>Monthly security re-scan<small>A fresh outside check every month, and an email from us when something changes</small></td><td class="r">$97</td></tr>
         <tr><td class="c">MU-2C</td><td>Store care<small>Price updates, new styles added, one small change a month; bigger changes quoted first</small></td><td class="r">Included</td></tr>
         <tr class="sub"><td class="c"></td><td class="lbl">Total each month<small>Month to month, no contract. Starts the day the new store goes live; the weeks before are free.</small></td><td class="r"><b>$714</b></td></tr>
       </tbody>
     </table>
 
-    <div class="total">
-      <div><b class="num">$4,500</b><span>once, to build</span></div>
-      <div><b class="num">$714</b><span>a month</span></div>
-      <div><b class="num">$13,068</b><span>the first 12 months after launch, paid to Station</span></div>
-    </div>
+    <p class="firstyear">The first 12 months after launch come to <b>$13,068</b>, paid to Station.</p>
 
     <div class="terms">
       <p><b>Paid to others.</b> Your Shopify plan and apps (as now, plus the wholesale app for the trade login), the domain renewal at GoDaddy, Microsoft 365 and card fees.</p>
-      <p><b>Yours to keep.</b> The domain, the store, the customer list and every message stay yours. If you leave, you take all of it.</p>
+      <p><b>Yours to keep.</b> The domain, the store, the customer list and every message stay yours. If you leave, we email you a full export of your data.</p>
       <p><b>Starting smaller.</b> The store and the security work stand on their own: $4,500 to build and $97 a month, without the customer system. Add it later if you want it.</p>
       <p><b>Changing your mind.</b> Cancel the monthly items any time. The build is billed half to start and half at launch, after you've approved the preview.</p>
       <p><b>What security can promise.</b> It lowers the risk and shortens the time to respond. Nobody can promise you won't be hacked, and we won't.</p>
